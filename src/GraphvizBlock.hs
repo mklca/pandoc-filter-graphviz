@@ -4,7 +4,7 @@ import Data.ByteString.Lazy.UTF8 (fromString)
 import Data.Digest.Pure.SHA (sha256, showDigest)
 import System.Exit (ExitCode (ExitSuccess))
 import System.Process (readProcessWithExitCode)
-import Text.Pandoc
+import Text.Pandoc.Definition
 
 graphvizBlock :: Maybe Format -> Block -> IO Block
 graphvizBlock (Just format) (CodeBlock (id, classes, keyvals) content)
