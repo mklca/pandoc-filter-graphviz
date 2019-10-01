@@ -9,7 +9,6 @@ description: Please see the README at <https://github.com/Hakuyume/pandoc-filter
 
 dependencies:
   - base
-  - pandoc
   - pandoc-types
   - bytestring
   - utf8-string
