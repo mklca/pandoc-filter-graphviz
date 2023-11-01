@@ -1,0 +1,29 @@
+name: pandoc-filter-graphviz
+version: 0.0.0
+# license:
+git: https://github.com/Hakuyume/pandoc-filter-graphviz
+
+synopsis: This filter provides Graphviz code block support.
+category: Text
+description: Please see the README at <https://github.com/Hakuyume/pandoc-filter-graphviz#readme>.
+
+dependencies:
+  - base
+  - pandoc-types
+  - bytestring
+  - utf8-string
+  - SHA
+  - process
+  - text
+
+extra-doc-files:
+  - README.md
+
+executables:
+  pandoc-filter-graphviz:
+    source-dirs: src
+    main: Main.hs
+    ghc-options:
+      - -Wall
+      - -threaded
+      - -rtsopts
